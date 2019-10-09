@@ -12,7 +12,8 @@ class TestSearch:
     def setup(self):
         self.driver = init_driver()
         self.search_page = SearchPage(self.driver)
-
+    def test_test(self):
+	    a = 1
     @pytest.mark.parametrize("content", data_with_key("test_search"))
     def test_search(self,content):
         self.search_page.click_search()
