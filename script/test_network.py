@@ -22,6 +22,10 @@ class TestNetwork:
     def test_mobile_network_4g(self):
         self.network_page.click_first_network()
         self.network_page.choose_type('3G')
+        
+    def test_mobile_network_5g(self):
+        self.network_page.click_first_network()
+        self.network_page.choose_type('3G')
 
     def teardown(self):
         self.driver.quit()
